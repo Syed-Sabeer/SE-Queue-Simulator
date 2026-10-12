@@ -9,9 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove=".reference-queue\**\*.cs;Checks\**\*.cs" />
-    <EmbeddedResource Remove=".reference-queue\**\*" />
-    <None Remove=".reference-queue\**\*" />
+    <Compile Remove="Checks\**\*.cs" />
   </ItemGroup>
 
 </Project>
