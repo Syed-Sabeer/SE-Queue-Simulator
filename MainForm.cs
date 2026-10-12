@@ -28,7 +28,7 @@ public partial class MainForm : Form
 
     public MainForm()
     {
-        Text = "Queueing Theory Solver";
+        Text = "Queueing Models Calculator";
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(1000, 700);
         BackColor = AppBackground;
@@ -64,7 +64,7 @@ public partial class MainForm : Form
 
         var title = new Label
         {
-            Text = "Queueing Theory Solver",
+            Text = "Queueing Models Calculator",
             ForeColor = Color.White,
             Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point),
             Dock = DockStyle.Top,
@@ -93,6 +93,7 @@ public partial class MainForm : Form
             Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point)
         };
 
+        tabs.TabPages.Add(BuildCalculatorTab());
         tabs.TabPages.Add(BuildMM1Tab());
         tabs.TabPages.Add(BuildMG1Tab());
         tabs.TabPages.Add(BuildSimulationTab());
